@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Charging Stations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            color: #06402B
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .image-container img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border: 5px solid #90EE90;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 3px solid #06402B;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #90EE90;
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        .form-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .form-section h4 {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #4CAF50;
+        }
+        .form-section label {
+            display: inline-block;
+            margin: 5px 10px;
+            font-size: 16px;
+        }
+        .form-section input[type="radio"],
+        .form-section input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="password"], input[type="tel"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .submit{
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+        }
+        .submit-button{
+            width: 75%;  
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>EV Charging Stations</h1>
+        <p>Your one-stop solution for electric vehicle charging</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <!-- Introduction -->
+        <h2>Welcome to EV Charging Stations</h2>
+        <p>Our platform allows homeowners to list their properties as charging stations for electric vehicles. Customers can book and pay for charging services directly through our website.<br><br>Join us in promoting a greener future!</p>
+        
+        <h3>Benefits of using us:</h3>
+        <ul>
+        	<li>Provide EV owners with convenient and plentiful charging facilities.</li>
+            <li>The way people charge their electric vehicles will be completely transformed by our company.</li>
+        </ul>
+        
+        <h3>Images</h3>
+		<div class="image-container">
+            <img src="https://media.wired.com/photos/63bc816a995aa119ba7ba802/1:1/w_1600,h_1600,c_limit/Biz-ev-charger-1242853588.jpg" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYjRxvrviVw6JxME7IYoqGl16c4ps7dlrWHA&s"/>
+        </div>
+        
+        <hr>
+        <!-- Table Example -->
+        <h3>Available Charging Stations</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Location</th>
+                    <th>Type</th>
+                    <th>Price per Hour</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>123 Green Street, Dallas</td>
+                    <td>Fast Charging</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>456 Eco Road, Fort Worth</td>
+                    <td>Standard Charging</td>
+                    <td>$5</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <!-- Form Section -->
+        <h3>List Your Property</h3>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="charging-type">Charging Type:</label>
+            <select id="charging-type" name="charging-type" required>
+                <option value="fast">Fast Charging</option>
+                <option value="standard">Standard Charging</option>
+            </select>
+
+            <!-- Availability Section -->
+            <div class="form-section">
+                <h4>Availability</h4>
+                <label for="available-yes">
+                    <input type="radio" id="available-yes" name="availability" value="yes" checked> Available
+                </label>
+                <label for="available-no">
+                    <input type="radio" id="available-no" name="availability" value="no"> Not Available
+                </label>
+            </div>
+
+            <!-- Additional Services Section -->
+            <div class="form-section">
+                <h4>Additional Services</h4>
+                <label for="service1">
+                    <input type="checkbox" id="service1" name="service1" value="car-wash" checked> Car Wash
+                </label>
+                <label for="service2">
+                    <input type="checkbox" id="service2" name="service2" value="tire-check"> Tire Pressure Check
+                </label>
+            </div>
+            
+            <hr>
+            <div class="submit">
+              <button class="submit-button" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 EV Charging Stations. All rights reserved.</p>
+    </footer>
+</body>
+</html>
